@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Sakire Ipek Demircan Aktas">
+  <title>Bear Ninja Hunter</title>
+</head>
+<body>
+  <h1>Bear Ninja Hunter Game</h1>
+  <p id="result">Welcome to the game!</p>
+
+  <script>
+    // Welcome the player to the game
+    let playerName = prompt("Welcome to Bear Hunter Ninja! Please enter your name to get started:");
+
+    // Alert to greet the player
+    alert(`Hi ${playerName}! Let's Play!!`);
+
+    // Prompt the player's choice
+    let playerChoice = prompt("Who are you: Bear, Ninja or Hunter?");
+
+    // Hard-code the computer choice
+    let computerChoice = "Bear";
+
+    // The result message
+    let resultText = `${playerName}, You picked ${playerChoice}!<br>The computer picked ${computerChoice}!`;
+    let consoleText = `${playerName}, You picked ${playerChoice}!\nThe computer picked ${computerChoice}!`;
+
+    // Output to the HTML
+    document.getElementById("result").innerHTML = resultText;
+
+    // Output to the console
+    console.log(consoleText);
+  </script>
+</body>
+</html>
