@@ -23,8 +23,10 @@
     let computerChoice = "Bear";
 
     // The result message
-    let resultText = `${playerName}, You picked ${playerChoice}!<br>The computer picked ${computerChoice}!`;
-    let consoleText = playerName + ", You picked " + playerChoice + "!\nThe computer picked " + computerChoice + "!";
+    let resultText = playerName + " you picked " + playerChoice + "!<br>" +
+                  "The computer picked " + computerChoice + "!<br>";
+    let consoleText = playerName + " you picked " + playerChoice + "!\n" +
+                  "The computer picked " + computerChoice + "!\n";
 
     // Output to the HTML
     document.getElementById("result").innerHTML = resultText;
